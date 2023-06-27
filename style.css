@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", "Times New Roman";
+}
+
+.head {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Cambria";
+  z-index: 1;
+}
+
+header {
+  background: url(eduford_img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  text-align: center;
+}
+
+
+.lgm-link {
+  position: relative;
+    display: inline-block;
+    font-size: 2em;
+    color: #e5e4e2;
+    font-weight: 800;
+    text-decoration: none;
+    overflow: hidden;
+    transition: clip-path 300ms ease-in-out;
+}
+
+.lgm-link:hover::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.lgm-link::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #000000;
+  text-decoration: none;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 300ms ease-in-out;
+}
+
+header h2 {
+  margin: 50px;
+  margin-bottom: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cambria";
+} 
+
+body > section:nth-child(2) > header > h2 > a{
+  margin-bottom: 180px;
+}
+
+header h2:hover {
+  transform: scale(1);
+}
+
+span {
+  color: black;
+}
+
+.nav-bar {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(24, 120, 255);
+  padding-left: 10px;
+  padding-right: 30px;
+  z-index: 100;
+  text-transform: uppercase;
+}
+.logo {
+  margin: 10px;
+  font-size: 28px;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: transparent;
+  transition: 1s ease-in-out;
+}
+.logo-img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.links {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  right: 0;
+}
+.links a {
+  font: size 18px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+.links a:hover {
+  transform: translatey(-5px);
+}
+.link-text::after {
+  position: absolute;
+  height: 2px;
+  content: "";
+  bottom: 2px;
+  width: 0%;
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+.main{
+  background-color: rgb(24, 120, 255);
+  height: 300px;
+}
+
+.main img{
+  width: 300px;
+  margin-right: 20px;
+  height: 100%;
+  display: flex;
+  float: left;
+}
+
+.main h1{
+  padding: 30px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.main p{
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  text-indent: 20px;
+  line-height: 30px;
+}
+
+
+
+.row {
+  background: url(eduford_img/banner2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 120vh;
+  display: flex;
+
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  margin-top: 90px ;
+}
+
+.row h2{
+  color: rgb(255, 255, 255);
+  padding: 10px 170px;
+}
+
+.row h1{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+}
+
+#form{
+  background: url(eduford_img/library.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+#form h1{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+}
+
+#form p{
+  position: absolute;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+  margin: 90px 0;
+  color: rgb(255, 255, 255);
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color:  rgb(24, 120, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+
+.container {
+  border-radius: 5px;
+  margin: 140px auto 30px auto;
+  background-color: #f2f2f2;
+  padding: 40px 40px 0 ;
+}
+
+
+footer{
+  background-color: rgb(24, 120, 255);
+  width: 100%;
+  height: 50px;
+}
+
+footer p{
+  text-align: center;
+  padding: 15px;
+  vertical-align: middle;
+  color: white;
+}
